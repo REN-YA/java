@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 public class study04 {
 	public static void main( String[] args ) throws IOException{
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が y より大きい場合に、“xはyより大きい。”という文を表示するプログラムを作成しなさい。
@@ -52,7 +54,24 @@ public class study04 {
 		//“正の偶数”、“正の奇数”、“負の偶数”、“負の奇数”
 		//※ 	負の数であっても、2 で割り切れれば偶数、そうでなければ奇数とする。
 		//※ 	0 は“正の偶数”であるとする。
-
+		BufferedReader br = new BufferedReader(
+                new InputStreamReader( System.in ) );
+		int x = Integer.parseInt( br.readLine() );
+		if( ( x % 2 ) == 0 )
+		{
+		if( x >= 0 )
+		System.out.println( "正の偶数" );
+		else
+		System.out.println( "負の偶数" );
+		}
+		else
+		{
+		if( x >= 0 )
+		System.out.println( "正の奇数" );
+		else
+		System.out.println( "負の奇数" );
+		}
+		
 		//試験の点数を入力し、対応する成績を表示するプログラムを３種類作成しなさい。
 		//試験は 100 点満点（ 0 点～ 100 点）とし、点数と成績の対応を以下のようにします。
 		
