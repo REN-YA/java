@@ -2,19 +2,52 @@ import java.io.IOException;
 public class study04 {
 	public static void main( String[] args ) throws IOException{
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が y より大きい場合に、“xはyより大きい。”という文を表示するプログラムを作成しなさい。
-		BufferedReader br = new BufferedReader(
-                new InputStreamReader( System.in ) );
-		int x = Integer.parseInt(br.readLine);
-		int y = Integer.parseInt(br.readLine);
-		if(x>y)
-		System.out.println("xはyより大きい";
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int x = Integer.parseInt( br.readLine() );
+//		int y = Integer.parseInt( br.readLine() );
+//		if( x > y )
+//		System.out.println( "xはyより大きい。" );
 		//２つの整数値を入力し、大きい方（小さくない方）の数を表示するプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int x = Integer.parseInt( br.readLine() );
+//		int y = Integer.parseInt( br.readLine() );
+//		if( x > y )
+//		System.out.println( x );
+//		else
+//		System.out.println( y );
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が ｙ より大きい場合には“xはyより大きい”、x が y より小さい場合には“xはyより小さい”と表示するプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int x = Integer.parseInt( br.readLine() );
+//		int y = Integer.parseInt( br.readLine() );
+//		if( x > y )
+//		System.out.println( "xはyより大きい。" );
+//		else if( x < y )
+//		System.out.println( "xはyより小さい。" );
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が ｙ より大きい場合には“xはyより大きい”、x が y より小さい場合には“xはyより小さい”、x と y が等しい場合には“xとyは等しい”と表示するプログラムを作成しなさい。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int x = Integer.parseInt( br.readLine() );
+//		int y = Integer.parseInt( br.readLine() );
+//		if( x > y )
+//		System.out.println( "xはyより大きい。" );
+//		else if( x < y )
+//		System.out.println( "xはyより小さい。" );
+//		else
+//		System.out.println( "xとyは等しい。" );
+				
 		//正の整数値を入力し、それが偶数か奇数かを判定するプログラムを作成しなさい。
 		//※ 	奇数、偶数の判定には除算の余りを利用する。
-
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int x = Integer.parseInt( br.readLine() );
+//		if( ( x % 2 ) == 0 )
+//		System.out.println( "偶数です。" );
+//		else
+//		System.out.println( "奇数です。" );
+//		
 		//整数値を入力し、以下の４つの分類から該当するものを表示するプログラムを作成しなさい。
 		//“正の偶数”、“正の奇数”、“負の偶数”、“負の奇数”
 		//※ 	負の数であっても、2 で割り切れれば偶数、そうでなければ奇数とする。
