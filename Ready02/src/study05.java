@@ -3,11 +3,18 @@ import java.io.IOException;
 public class study05 {
 	public static void main( String[] args ) throws IOException{
 		//“SPAM”という単語を 10 回表示するプログラムを作成しなさい。
-		
+		for( int i = 0 ; i < 10 ; i++ )
+		    System.out.print( "SPAM" );
 		//九九、三の段（ 3 ～ 27 の 3 の倍数）を表示するプログラムを作成しなさい。
-		
+		for( int i = 1 ; i <= 9 ; i++ )
+		    System.out.print( ( 3 * i ) + " " );
 		//2 の 1 乗から 8 乗までを計算し表示するプログラムを作成しなさい。
-		
+		int x = 1;
+		for( int n = 1 ; n <= 8 ; n++ )
+		{
+		    x *= 2;
+		    System.out.println( "2の" + n + "乗=" + x );
+		}
 		//7 の階乗を計算し、表示するプログラムを作成しなさい。
 		
 		//整数を 10 回入力し、平均値を求めるプログラムを作成しなさい。
