@@ -66,17 +66,40 @@ public class study05 {
 //		System.out.println( "引き分け" );
 		
 		//自然数（正の整数）を 10 回入力し、最大値を求めるプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int max_value = 0;
+//		for( int i = 0 ; i < 10 ; i++ )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		if( value > max_value )
+//		max_value = value;
+//		}
+//		System.out.println( "最大値=" + max_value );
+		//整数を 10 回入力し、最大値と最小値を求めるプログラムを作成しなさい。
 		BufferedReader br = new BufferedReader(
                 new InputStreamReader( System.in ) );
-		int max_value = 0;
+		int max_value = 0, min_value = 0;
 		for( int i = 0 ; i < 10 ; i++ )
 		{
 		int value = Integer.parseInt( br.readLine() );
-		if( value > max_value )
+		
+		if( i == 0 )
+		{
 		max_value = value;
+		min_value = value;
 		}
-		System.out.println( "最大値=" + max_value );
-		//整数を 10 回入力し、最大値と最小値を求めるプログラムを作成しなさい。
+		else
+		{
+		if( value > max_value )
+		    max_value = value;
+		
+		if( value < min_value )
+		    min_value = value;
+		}
+		}
+		
+		System.out.println( "最大値=" + max_value + " 最小値=" + min_value );
 		
 		//個数を示す数値を入力し、その個数分だけ‘*’を表示するプログラムを作成しなさい。
 		
