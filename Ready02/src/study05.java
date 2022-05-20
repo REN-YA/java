@@ -109,18 +109,25 @@ public class study05 {
 //		for( int i = 0 ; i < count ; i++ )
 //		System.out.print( "*" );
 		//個数を示す数値を入力し、その個数分だけ 0 ～ 9 の数字を表示するプログラムを作成しなさい。数字は 0, 1, 2, 3, , の順に表示し、9 の次は 0 に戻るものとします。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//
+//		int count = Integer.parseInt( br.readLine() );
+//		for( int i = 0, out = 0 ; i < count ; i++ )
+//		{
+//		System.out.print( out++ );
+//		if( out > 9 )
+//		out = 0;
+//		}
+		//数値を繰り返し入力し、合計が 100 を超えたら入力を止めて合計を表示するプログラムを作成しなさい。
 		BufferedReader br = new BufferedReader(
                 new InputStreamReader( System.in ) );
-
-		int count = Integer.parseInt( br.readLine() );
-		for( int i = 0, out = 0 ; i < count ; i++ )
-		{
-		System.out.print( out++ );
-		if( out > 9 )
-		out = 0;
-		}
-		//数値を繰り返し入力し、合計が 100 を超えたら入力を止めて合計を表示するプログラムを作成しなさい。
+		int sum = 0;
 		
+		while( sum <= 100 )
+		sum += Integer.parseInt( br.readLine() );
+		
+		System.out.println( "合計は " + sum );
 		//ストライク・カウントを数えるプログラムを作成しなさい。
 			//１球ごとにストライクかボールかを入力する。
 			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
