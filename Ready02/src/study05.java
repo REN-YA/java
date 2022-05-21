@@ -131,6 +131,29 @@ public class study05 {
 		//ストライク・カウントを数えるプログラムを作成しなさい。
 			//１球ごとにストライクかボールかを入力する。
 			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int strike = 0;
+//		int ball = 0;
+//		
+//		while( strike < 3 && ball < 4 )
+//		{
+//		System.out.print( "ストライク=1 or ボール=2 ？" );
+//		
+//		int judge = Integer.parseInt( br.readLine() );
+//		
+//		if( judge == 1 )
+//		strike++;
+//		else if( judge == 2 )
+//		ball++;
+//		}
+//		
+//		System.out.println( ball + "ボール," + strike + "ストライク" );
+				
+		//前の問題に次の修正を加えなさい。
+			//１球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
+			//ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
+			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
 		BufferedReader br = new BufferedReader(
                 new InputStreamReader( System.in ) );
 		int strike = 0;
@@ -138,7 +161,7 @@ public class study05 {
 		
 		while( strike < 3 && ball < 4 )
 		{
-		System.out.print( "ストライク=1 or ボール=2 ？" );
+		System.out.print( "ストライク=1 or ボール=2 or ファウル=3？" );
 		
 		int judge = Integer.parseInt( br.readLine() );
 		
@@ -146,14 +169,11 @@ public class study05 {
 		strike++;
 		else if( judge == 2 )
 		ball++;
+		else if( judge == 3 && strike < 2 )
+		strike++;
 		}
 		
 		System.out.println( ball + "ボール," + strike + "ストライク" );
-				
-		//前の問題に次の修正を加えなさい。
-			//１球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
-			//ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
-			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
 		
 		//入力された数が素数かどうかを判定するプログラムを作成しなさい。
 		
