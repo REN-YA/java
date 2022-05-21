@@ -154,28 +154,42 @@ public class study05 {
 			//１球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
 			//ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
 			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
-		BufferedReader br = new BufferedReader(
-                new InputStreamReader( System.in ) );
-		int strike = 0;
-		int ball = 0;
-		
-		while( strike < 3 && ball < 4 )
-		{
-		System.out.print( "ストライク=1 or ボール=2 or ファウル=3？" );
-		
-		int judge = Integer.parseInt( br.readLine() );
-		
-		if( judge == 1 )
-		strike++;
-		else if( judge == 2 )
-		ball++;
-		else if( judge == 3 && strike < 2 )
-		strike++;
-		}
-		
-		System.out.println( ball + "ボール," + strike + "ストライク" );
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int strike = 0;
+//		int ball = 0;
+//		
+//		while( strike < 3 && ball < 4 )
+//		{
+//		System.out.print( "ストライク=1 or ボール=2 or ファウル=3？" );
+//		
+//		int judge = Integer.parseInt( br.readLine() );
+//		
+//		if( judge == 1 )
+//		strike++;
+//		else if( judge == 2 )
+//		ball++;
+//		else if( judge == 3 && strike < 2 )
+//		strike++;
+//		}
+//		
+//		System.out.println( ball + "ボール," + strike + "ストライク" );
 		
 		//入力された数が素数かどうかを判定するプログラムを作成しなさい。
+		BufferedReader br = new BufferedReader(
+                new InputStreamReader( System.in ) );
+		int value = Integer.parseInt( br.readLine() );
+		int n;
+		
+		for( n = 2 ; n <= ( value / 2 ) ; n++ ){
+		if( ( value % n ) == 0 )
+		break;
+		}
+		
+		if( n > ( value / 2 ) )
+		System.out.println( value + "は素数です" );
+		else
+		System.out.println( value + "は素数ではありません" );
 		
 		//2 以上の数値を入力し、素因数分解した結果を表示しなさい。
 		
