@@ -203,33 +203,59 @@ public class study05 {
 //		}
 //		}
 		//九九表（一の段～九の段）を表示するプログラムを作成しなさい。
-		for( int p = 1 ; p <= 9 ; p++ )
-		{
-		    for( int q = 1 ; q <= 9 ; q++ )
-		        System.out.printf(" %2d", p * q );
-
-		    System.out.println();
-		}
+//		for( int p = 1 ; p <= 9 ; p++ )
+//		{
+//		    for( int q = 1 ; q <= 9 ; q++ )
+//		        System.out.printf(" %2d", p * q );
+//
+//		    System.out.println();
+//		}
 		//数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
-		BufferedReader br = new BufferedReader(
-                new InputStreamReader( System.in ) );
-		int sum = 0;
-		
-		for( ; ; )
-		{
-		int value = Integer.parseInt( br.readLine() );
-		
-		if( value == 0 )
-		break;
-		
-		sum += value;
-		}
-		
-		System.out.println( "合計は" + sum );
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int sum = 0;
+//		
+//		for( ; ; )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( value == 0 )
+//		break;
+//		
+//		sum += value;
+//		}
+//		
+//		System.out.println( "合計は" + sum );
 		//数値を繰り返して入力し、0 が入力されたら入力を止め、平均値を表示するプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int sum = 0;
+//		int count = 0;
+//		
+//		for( ; ; )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( value == 0 )
+//		break;
+//		
+//		sum += value;
+//		count++;
+//		}
 		
+//		System.out.println( "平均は" + ( sum / count ) );
 		//サイズを示す数値を入力し、何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
+		BufferedReader br = new BufferedReader(
+		                new InputStreamReader( System.in ) );
+		int size = Integer.parseInt( br.readLine() );
 		
+		for( int i = 0 ; i < size ; i++ )
+		{
+		for( int j = 0 ; j <= i ; j++ )
+		System.out.print( "$" );
+
+System.out.println();
+}
 		//サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい
 		
 		//フィボナッチ数列を表示するプログラムを作成しなさい。
