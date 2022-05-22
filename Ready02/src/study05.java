@@ -176,31 +176,86 @@ public class study05 {
 //		System.out.println( ball + "ボール," + strike + "ストライク" );
 		
 		//入力された数が素数かどうかを判定するプログラムを作成しなさい。
-		BufferedReader br = new BufferedReader(
-                new InputStreamReader( System.in ) );
-		int value = Integer.parseInt( br.readLine() );
-		int n;
-		
-		for( n = 2 ; n <= ( value / 2 ) ; n++ ){
-		if( ( value % n ) == 0 )
-		break;
-		}
-		
-		if( n > ( value / 2 ) )
-		System.out.println( value + "は素数です" );
-		else
-		System.out.println( value + "は素数ではありません" );
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int value = Integer.parseInt( br.readLine() );
+//		int n;
+//		
+//		for( n = 2 ; n <= ( value / 2 ) ; n++ ){
+//		if( ( value % n ) == 0 )
+//		break;
+//		}
+//		
+//		if( n > ( value / 2 ) )
+//		System.out.println( value + "は素数です" );
+//		else
+//		System.out.println( value + "は素数ではありません" );
 		
 		//2 以上の数値を入力し、素因数分解した結果を表示しなさい。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int n = Integer.parseInt( br.readLine() );
+//		
+//		for( int x = 2 ; n > 1 ; x++ ){
+//		while( ( n % x ) == 0 ){
+//		System.out.print( x + " " );
+//		n /= x;
+//		}
+//		}
 		//九九表（一の段～九の段）を表示するプログラムを作成しなさい。
-		
+//		for( int p = 1 ; p <= 9 ; p++ )
+//		{
+//		    for( int q = 1 ; q <= 9 ; q++ )
+//		        System.out.printf(" %2d", p * q );
+//
+//		    System.out.println();
+//		}
 		//数値を繰り返して入力し、0 が入力されたら入力を止め、それまでの合計を表示するプログラムを作成しなさい。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int sum = 0;
+//		
+//		for( ; ; )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( value == 0 )
+//		break;
+//		
+//		sum += value;
+//		}
+//		
+//		System.out.println( "合計は" + sum );
 		//数値を繰り返して入力し、0 が入力されたら入力を止め、平均値を表示するプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int sum = 0;
+//		int count = 0;
+//		
+//		for( ; ; )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( value == 0 )
+//		break;
+//		
+//		sum += value;
+//		count++;
+//		}
 		
+//		System.out.println( "平均は" + ( sum / count ) );
 		//サイズを示す数値を入力し、何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
+		BufferedReader br = new BufferedReader(
+		                new InputStreamReader( System.in ) );
+		int size = Integer.parseInt( br.readLine() );
 		
+		for( int i = 0 ; i < size ; i++ )
+		{
+		for( int j = 0 ; j <= i ; j++ )
+		System.out.print( "$" );
+
+System.out.println();
+}
 		//サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい
 		
 		//フィボナッチ数列を表示するプログラムを作成しなさい。
