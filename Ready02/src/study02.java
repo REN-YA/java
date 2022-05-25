@@ -24,15 +24,23 @@ public class study02 {
 			//変数 x の値を表示する。
 			//変数 x の値を半分（1/2）にする。
 			//変数 x の値を表示する。
-			int x;
-
-	        x = 7;
-	        x *= 3;
-	        System.out.println( "x=" + x );
-	        x /= 2;
-	        System.out.println( "x=" + x );
+//			int x;
+//
+//	        x = 7;
+//	        x *= 3;
+//	        System.out.println( "x=" + x );
+//	        x /= 2;
+//	        System.out.println( "x=" + x );
 			
 		//int 型の変数 x、y に任意の数値を代入し、x の値を y に、y の値を x に入れ替えて x と y の値を表示するプログラムを作成しなさい。
+		 	int x, y, t;
+	        x = 3;
+	        y = 7;
+
+	        t = x;
+	        x = y;
+	        y = t;
+	        System.out.println( "x=" + x + ",y=" + y );
 		
 		//int 型の変数 x、y に数値 19、23 を代入し、その積を変数 z に代入して z の値を表示するプログラムを作成しなさい。
 
