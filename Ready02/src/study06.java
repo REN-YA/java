@@ -1,3 +1,4 @@
+//【練習問題】配列
 import java.io.IOException;
 public class study06 {
 	public static void main (String[] args) throws IOException{
