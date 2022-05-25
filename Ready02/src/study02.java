@@ -15,8 +15,8 @@ public class study02 {
 
 		
 		//int 型の変数 x に数値 13 と 17 の和を代入し、x の値を表示するプログラムを作成しなさい。
-			int x = 13+17;
-			System.out.println(x);
+//			int x = 13+17;
+//			System.out.println(x);
 			
 		//次のプログラムを作成しなさい。
 			//int 型の変数 x に数値 7 を代入する。
@@ -24,6 +24,13 @@ public class study02 {
 			//変数 x の値を表示する。
 			//変数 x の値を半分（1/2）にする。
 			//変数 x の値を表示する。
+			int x;
+
+	        x = 7;
+	        x *= 3;
+	        System.out.println( "x=" + x );
+	        x /= 2;
+	        System.out.println( "x=" + x );
 			
 		//int 型の変数 x、y に任意の数値を代入し、x の値を y に、y の値を x に入れ替えて x と y の値を表示するプログラムを作成しなさい。
 		
