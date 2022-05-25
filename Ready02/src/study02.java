@@ -33,17 +33,21 @@ public class study02 {
 //	        System.out.println( "x=" + x );
 			
 		//int 型の変数 x、y に任意の数値を代入し、x の値を y に、y の値を x に入れ替えて x と y の値を表示するプログラムを作成しなさい。
-		 	int x, y, t;
-	        x = 3;
-	        y = 7;
-
-	        t = x;
-	        x = y;
-	        y = t;
-	        System.out.println( "x=" + x + ",y=" + y );
-		
+//		 	int x, y, t;
+//	        x = 3;
+//	        y = 7;
+//
+//	        t = x;
+//	        x = y;
+//	        y = t;
+//	        System.out.println( "x=" + x + ",y=" + y );
+//		
 		//int 型の変数 x、y に数値 19、23 を代入し、その積を変数 z に代入して z の値を表示するプログラムを作成しなさい。
-
+	        int x = 19;
+	        int y = 23;
+	        int z = x * y;
+	        System.out.println(z);
+	        
 		//int 型の変数 x に任意の数値を代入し、x を 2 倍、3 倍、4 倍した結果を表示するプログラムを作成しなさい。
 
 		//int 型の変数 x に任意の数値を代入し、x を 1 乗、2 乗、3 乗した結果を表示するプログラムを作成しなさい。
