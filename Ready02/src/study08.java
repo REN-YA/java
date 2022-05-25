@@ -1,3 +1,4 @@
+//【練習問題】クラスⅠ
 import java.io.IOException;
 public class study08 {
 	public static void main (String[] args) throws IOException{
