@@ -1,5 +1,7 @@
 //【練習問題】入力
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 public class study03 {
 	public static void main(String[] args)throws IOException {
 //		 BufferedReader br = new BufferedReader(
@@ -7,7 +9,11 @@ public class study03 {
 //		 String  s = br.readLine();    // 1行分の文字列を入力する
 		
 		//String 型の変数 s に文字列を入力し、s の値を表示するプログラムを作成しなさい。
+		BufferedReader br = new BufferedReader(
+					new InputStreamReader(System.in));
 
+		String s = br.readLine();
+		System.out.println(s);
 		
 		//int 型の変数 x に数値を入力し、x の値を表示するプログラムを作成しなさい。
 		
