@@ -46,19 +46,37 @@ public class study04 {
 				
 		//正の整数値を入力し、それが偶数か奇数かを判定するプログラムを作成しなさい。
 			//※ 	奇数、偶数の判定には除算の余りを利用する。
-		BufferedReader br = new BufferedReader(
-					new InputStreamReader(System.in));
-		int x = Integer.parseInt(br.readLine());
-		if((x%2)==0)
-			System.out.println("偶数です");
-		else 
-			System.out.println("奇数です");
+//		BufferedReader br = new BufferedReader(
+//					new InputStreamReader(System.in));
+//		int x = Integer.parseInt(br.readLine());
+//		if((x%2)==0)
+//			System.out.println("偶数です");
+//		else 
+//			System.out.println("奇数です");
 		
 
 		//整数値を入力し、以下の４つの分類から該当するものを表示するプログラムを作成しなさい。
 			//“正の偶数”、“正の奇数”、“負の偶数”、“負の奇数”
 			//※ 	負の数であっても、2 で割り切れれば偶数、そうでなければ奇数とする。
 			//※ 	0 は“正の偶数”であるとする。
+		BufferedReader br = new BufferedReader(
+				new InputStreamReader(System.in));
+		int x = Integer.parseInt(br.readLine());
+		if( ( x % 2 ) == 0 )
+		{
+		    if( x >= 0 )
+		        System.out.println( "正の偶数" );
+		    else
+		        System.out.println( "負の偶数" );
+		}
+		else
+		{
+		    if( x >= 0 )
+		        System.out.println( "正の奇数" );
+		    else
+		        System.out.println( "負の奇数" );
+		}
+		
 
 		
 		//試験の点数を入力し、対応する成績を表示するプログラムを３種類作成しなさい。
