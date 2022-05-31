@@ -134,36 +134,55 @@ public class study04 {
 //		
 		
 		//曜日と、午前、午後、夜間の区別を入力し、病院が開いているか、休診であるかを表示するプログラムを作成しなさい。
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//
+//		System.out.println( "曜日を選択してください" );
+//		System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
+//		int day = Integer.parseInt( br.readLine() );
+//		
+//		System.out.println( "時間帯を選択してください" );
+//		System.out.print( "0=午前、1=午後、2=夜間" );
+//		int zone = Integer.parseInt( br.readLine() );
+//		
+//		boolean bopen = true;
+//		
+//		if( day == 0 )
+//		bopen = false;
+//		else if( zone == 0 && ( day == 2 || day == 5 ) )
+//		bopen = false;
+//		else if( zone == 1 && day == 6 )
+//		bopen = false;
+//		else if( zone == 2 && ( day == 3 || day == 6 ) )
+//		bopen = false;
+//		
+//		if( bopen )
+//		System.out.println( "診療しています。" );
+//		else
+//		System.out.println( "休診です。" );
+		
+		//整数値 x, y を入力し、以下の条件に該当する場合、そうであることを示す文を表示しなさい。
 		BufferedReader br = new BufferedReader(
                 new InputStreamReader( System.in ) );
 
-		System.out.println( "曜日を選択してください" );
-		System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
-		int day = Integer.parseInt( br.readLine() );
+		int x = Integer.parseInt( br.readLine() );
+		int y = Integer.parseInt( br.readLine() );
 		
-		System.out.println( "時間帯を選択してください" );
-		System.out.print( "0=午前、1=午後、2=夜間" );
-		int zone = Integer.parseInt( br.readLine() );
+		if( x < y && ( x % 2 ) == 0 && ( y % 2 ) == 0 )
+		System.out.println( "xはyより小さく、かつ、xとyは共に偶数である。" );
 		
-		boolean bopen = true;
+		if( x == y && x < 0 )
+		System.out.println( "xとyは等しく、かつ、負の数である。" );
 		
-		if( day == 0 )
-		bopen = false;
-		else if( zone == 0 && ( day == 2 || day == 5 ) )
-		bopen = false;
-		else if( zone == 1 && day == 6 )
-		bopen = false;
-		else if( zone == 2 && ( day == 3 || day == 6 ) )
-		bopen = false;
+		if( x < y || ( x % 2 ) == 0 )
+		System.out.println( "xはyより小さい、または、xは偶数である。" );
 		
-		if( bopen )
-		System.out.println( "診療しています。" );
-		else
-		System.out.println( "休診です。" );
+		if( ( x <= 10 || x >= 100 ) && ( y >= 10 && y <= 100 ) )
+		System.out.println( "xは10以下または100以上で、かつ、yは10以上かつ100以下である。" );
 		
-		//整数値 x, y を入力し、以下の条件に該当する場合、そうであることを示す文を表示しなさい。
-		
-		
+		if( ! ( x < 0 && y < 0 ) )
+		System.out.println( "xもyも負の数である、ではない。" );
+				
 		//月を表す数値を入力し、その月の初めから年末までにある祝日を表示するプログラムを作成しなさい。
 		
 		
