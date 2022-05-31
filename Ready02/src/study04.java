@@ -118,23 +118,48 @@ public class study04 {
 		
 		
 		//中間試験と、期末試験の点数（それぞれ 0 ～ 100 点）を入力し、次の条件に従って合格、不合格を判定するプログラムを作成しなさい。
-		BufferedReader br = new BufferedReader(
-					new InputStreamReader(System.in));
-		int score1 = Integer.parseInt( br.readLine() );
-		int score2 = Integer.parseInt( br.readLine() );
-
-		if( score1 >= 60 && score2 >= 60 )
-		    System.out.println( "合格" );
-		else if( ( score1 + score2 ) >= 130 )
-		    System.out.println( "合格" );
-		else if( ( score1 + score2 ) >= 100 && ( score1 >= 90 || score2 >= 90 ) )
-		    System.out.println( "合格" );
-		else
-		    System.out.println( "不合格" );
-		
+//		BufferedReader br = new BufferedReader(
+//					new InputStreamReader(System.in));
+//		int score1 = Integer.parseInt( br.readLine() );
+//		int score2 = Integer.parseInt( br.readLine() );
+//
+//		if( score1 >= 60 && score2 >= 60 )
+//		    System.out.println( "合格" );
+//		else if( ( score1 + score2 ) >= 130 )
+//		    System.out.println( "合格" );
+//		else if( ( score1 + score2 ) >= 100 && ( score1 >= 90 || score2 >= 90 ) )
+//		    System.out.println( "合格" );
+//		else
+//		    System.out.println( "不合格" );
+//		
 		
 		//曜日と、午前、午後、夜間の区別を入力し、病院が開いているか、休診であるかを表示するプログラムを作成しなさい。
+		BufferedReader br = new BufferedReader(
+                new InputStreamReader( System.in ) );
+
+		System.out.println( "曜日を選択してください" );
+		System.out.print( "0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜" );
+		int day = Integer.parseInt( br.readLine() );
 		
+		System.out.println( "時間帯を選択してください" );
+		System.out.print( "0=午前、1=午後、2=夜間" );
+		int zone = Integer.parseInt( br.readLine() );
+		
+		boolean bopen = true;
+		
+		if( day == 0 )
+		bopen = false;
+		else if( zone == 0 && ( day == 2 || day == 5 ) )
+		bopen = false;
+		else if( zone == 1 && day == 6 )
+		bopen = false;
+		else if( zone == 2 && ( day == 3 || day == 6 ) )
+		bopen = false;
+		
+		if( bopen )
+		System.out.println( "診療しています。" );
+		else
+		System.out.println( "休診です。" );
 		
 		//整数値 x, y を入力し、以下の条件に該当する場合、そうであることを示す文を表示しなさい。
 		
