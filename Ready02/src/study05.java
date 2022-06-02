@@ -4,7 +4,8 @@ import java.io.IOException;
 public class study05 {
 	public static void main( String[] args ) throws IOException{
 		//“SPAM”という単語を 10 回表示するプログラムを作成しなさい。
-
+		for( int i = 0 ; i < 10 ; i++ )
+		    System.out.print( "SPAM" );
 		
 		//7 の階乗を計算し、表示するプログラムを作成しなさい。
 
