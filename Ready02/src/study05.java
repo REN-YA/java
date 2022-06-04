@@ -44,50 +44,163 @@ public class study05 {
 //		System.out.println( "平均は" + ( sum / 10 ) );
 		
 		//整数、0 か 1 を 10 回入力する。これを対戦成績と考え、0 を負け、1 を勝ちとして、勝ちの総数、負けの総数を表示するプログラムを作成しなさい。
-		BufferedReader br = new BufferedReader(
-                new InputStreamReader( System.in ) );
-		int wins = 0;
-		
-		for( int i = 0 ; i < 10 ; i++ )
-		{
-		int result = Integer.parseInt( br.readLine() );
-		
-		if( result == 1 )
-		wins += 1;
-		}
-		
-		System.out.println( "勝ち" + wins + "回、負け" + ( 10 - wins ) + "回" );
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int wins = 0;
+//		
+//		for( int i = 0 ; i < 10 ; i++ )
+//		{
+//		int result = Integer.parseInt( br.readLine() );
+//		
+//		if( result == 1 )
+//		wins += 1;
+//		}
+//		
+//		System.out.println( "勝ち" + wins + "回、負け" + ( 10 - wins ) + "回" );
 		
 		//次のプログラムを作成しなさい
 			//巨人、阪神戦で毎回の得点を入力する。（１回～９回）
 			//入力が終わったら、それぞれの得点とどちらが勝ったかを表示する。
-
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int giants = 0;
+//		int tigers = 0;
+//		
+//		for( int game = 1 ; game <= 9 ; game++ )
+//		{
+//		System.out.print( game + "回表、巨人の得点は？" );
+//		giants += Integer.parseInt( br.readLine() );
+//		
+//		System.out.print( game + "回裏、阪神の得点は？" );
+//		tigers += Integer.parseInt( br.readLine() );
+//		}
+//		
+//		System.out.println( "巨人：" + giants + "点, 阪神：" + tigers + "点" );
+//		
+//		if( giants > tigers )
+//		System.out.println( "巨人の勝ち" );
+//		else if( giants < tigers )
+//		System.out.println( "阪神の勝ち" );
+//		else
+//		System.out.println( "引き分け" );
 		
 		//自然数（正の整数）を 10 回入力し、最大値を求めるプログラムを作成しなさい。
-
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int max_value = 0;
+//		
+//		for( int i = 0 ; i < 10 ; i++ )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( value > max_value )
+//		max_value = value;
+//		}
+//		
+//		System.out.println( "最大値=" + max_value );
+				
 		//整数を 10 回入力し、最大値と最小値を求めるプログラムを作成しなさい。
-
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int max_value = 0, min_value = 0;
+//		
+//		for( int i = 0 ; i < 10 ; i++ )
+//		{
+//		int value = Integer.parseInt( br.readLine() );
+//		
+//		if( i == 0 )
+//		{
+//		max_value = value;
+//		min_value = value;
+//		}
+//		else
+//		{
+//		if( value > max_value )
+//		    max_value = value;
+//		
+//		if( value < min_value )
+//		    min_value = value;
+//		}
+//		}
+//
+//		System.out.println( "最大値=" + max_value + " 最小値=" + min_value );
 		
 		//個数を示す数値を入力し、その個数分だけ‘*’を表示するプログラムを作成しなさい。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int count = Integer.parseInt( br.readLine() );
+//		
+//		for( int i = 0 ; i < count ; i++ )
+//		System.out.print( "*" );
 		
 		//個数を示す数値を入力し、その個数分だけ 0 ～ 9 の数字を表示するプログラムを作成しなさい。数字は 0, 1, 2, 3, , の順に表示し、9 の次は 0 に戻るものとします。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//
+//		int count = Integer.parseInt( br.readLine() );
+//		
+//		for( int i = 0, out = 0 ; i < count ; i++ )
+//		{
+//		System.out.print( out++ );
+//		
+//		if( out > 9 )
+//		out = 0;
+//		}
 		
 		//数値を繰り返し入力し、合計が 100 を超えたら入力を止めて合計を表示するプログラムを作成しなさい。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int sum = 0;
+//		
+//		while( sum <= 100 )
+//		sum += Integer.parseInt( br.readLine() );
+//		
+//		System.out.println( "合計は " + sum );
 		
 		//ストライク・カウントを数えるプログラムを作成しなさい。
 			//１球ごとにストライクかボールかを入力する。
 			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
-		
+//		BufferedReader br = new BufferedReader(
+//                new InputStreamReader( System.in ) );
+//		int strike = 0;
+//		int ball = 0;
+//		
+//		while( strike < 3 && ball < 4 )
+//		{
+//		System.out.print( "ストライク=1 or ボール=2 ？" );
+//		
+//		int judge = Integer.parseInt( br.readLine() );
+//		
+//		if( judge == 1 )
+//		strike++;
+//		else if( judge == 2 )
+//		ball++;
+//		}
+//
+//		System.out.println( ball + "ボール," + strike + "ストライク" );
 		
 		//前の問題に次の修正を加えなさい。
 			//１球ごとにストライク、ボール、ファウルの何れかを入力する。（残念ながらヒットにはなりません）
 			//ファウルの場合、２ストライクまではストライクにカウントするが、３ストライクにはならない。
 			//３ストライクまたは４ボールになったら入力を止め、ストライクとボールのカウントを表示する。
+		BufferedReader br = new BufferedReader(
+		        new InputStreamReader( System.in ) );
+		int strike = 0;
+		int ball = 0;
 		
+		while( strike < 3 && ball < 4 )
+		{
+		System.out.print( "ストライク=1 or ボール=2 ？" );
+		
+		int judge = Integer.parseInt( br.readLine() );
+		
+		if( judge == 1 )
+		strike++;
+		else if( judge == 2 )
+		ball++;
+		}
+		
+		System.out.println( ball + "ボール," + strike + "ストライク" );
 		
 		//入力された数が素数かどうかを判定するプログラムを作成しなさい。
 		
