@@ -9,12 +9,13 @@ public class study02 {
 //		System.out.println("xはx="+x);
 		
 		//int 型の変数 x、y に数値 13、17 を代入し、x、y の値を“x=13,y=17”のように表示するプログラムを作成しなさい。
-		int x = 13;
-		int y = 17;
-		System.out.println("x="+x+",y="+y);
+//		int x = 13;
+//		int y = 17;
+//		System.out.println("x="+x+",y="+y);
 		
 		//int 型の変数 x に数値 13 と 17 の和を代入し、x の値を表示するプログラムを作成しなさい。
-			
+//		int x = 13+17;
+//		System.out.println(x);
 			
 		//次のプログラムを作成しなさい。
 			//int 型の変数 x に数値 7 を代入する。
@@ -22,10 +23,20 @@ public class study02 {
 			//変数 x の値を表示する。
 			//変数 x の値を半分（1/2）にする。
 			//変数 x の値を表示する。
-			
+//		int x = 7;
+//		x = 7*3;
+//		System.out.println(x);
+//		x = 7/2;
+//		System.out.println(x);
 			
 		//int 型の変数 x、y に任意の数値を代入し、x の値を y に、y の値を x に入れ替えて x と y の値を表示するプログラムを作成しなさい。
-		 	
+		int x = 2;
+		int y = 4;
+		int z = y;
+		y = x;
+		x = z;
+		System.out.println(x);
+		System.out.println(y);
 		
 		//int 型の変数 x、y に数値 19、23 を代入し、その積を変数 z に代入して z の値を表示するプログラムを作成しなさい。
 	        
