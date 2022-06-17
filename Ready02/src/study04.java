@@ -1,16 +1,36 @@
 //【練習問題】分岐
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 public class study04 {
 	public static void main( String[] args ) throws IOException{
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が y より大きい場合に、“xはyより大きい。”という文を表示するプログラムを作成しなさい。
-
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int x = Integer.parseInt(br.readLine());
+//		int y = Integer.parseInt(br.readLine());
+//		if(x>y)
+//		System.out.println("xはyより大きい");
 		
 		//２つの整数値を入力し、大きい方（小さくない方）の数を表示するプログラムを作成しなさい。
-
-
+//		BufferedReader br = new BufferedReader(
+//				new InputStreamReader(System.in));
+//		int x = Integer.parseInt(br.readLine());
+//		int y = Integer.parseInt(br.readLine());
+//		if(x>y)
+//		System.out.println(x);
+//		else
+//		System.out.println(y);
 		
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が ｙ より大きい場合には“xはyより大きい”、x が y より小さい場合には“xはyより小さい”と表示するプログラムを作成しなさい。
-
+		BufferedReader br = new BufferedReader(
+				new InputStreamReader(System.in));
+		int x = Integer.parseInt(br.readLine());
+		int y = Integer.parseInt(br.readLine());
+		if (x>y)
+			System.out.println("xはyより大きい");
+		else if(x<y)
+			System.out.println("xはyより小さい");
 		
 		//int 型の変数 x、y にそれぞれ数値を入力し、x が ｙ より大きい場合には“xはyより大きい”、x が y より小さい場合には“xはyより小さい”、x と y が等しい場合には“xとyは等しい”と表示するプログラムを作成しなさい。
 
